@@ -9,6 +9,16 @@
             Padding="30,0"
             >
 
+            <Label
+                Text="Liczba unikalnych marek"
+                x:Name="lblLiczbaMarek"
+                />
+            <Label
+                Text=""
+                x:Name="lblMarki"
+                />
+
+
             <Entry
                 Placeholder="Wprowadź wyrażenie"
                 x:Name="entWyrazenie"
@@ -20,12 +30,15 @@
                 />
             <Entry
                 Placeholder="Wprowadz kierunki"
-                x:Name="etKierunki"
+                x:Name="entKierunki"
+                Completed="onCompletedKierunki"
                 />
             <Label
                 Text="Liczba unikalnych pól: 0"
                 x:Name="lblKierunki"
                 />
+            
+            
 
         </VerticalStackLayout>
     </ScrollView>

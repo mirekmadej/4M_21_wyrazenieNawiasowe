@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M_21_wyrazenieNawiasowe.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            >
+
+            <Entry
+                Placeholder="Wprowadź wyrażenie"
+                x:Name="entWyrazenie"
+                Completed="onCompleted"
+                />
+            <Label
+                Text="Status wyrażenia: "
+                x:Name="lblStatus"
+                />
+            <Entry
+                Placeholder="Wprowadz kierunki"
+                x:Name="etKierunki"
+                />
+            <Label
+                Text="Liczba unikalnych pól: 0"
+                x:Name="lblKierunki"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
